@@ -1,0 +1,21 @@
+.title {
+  font-size: 3rem;
+
+  background:linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--ifm-background-color) 50%,
+      var(--ifm-background-color) 100%
+    );
+
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
+
+/**
+  Blog post title should be smaller on smaller devices
+**/
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+}
