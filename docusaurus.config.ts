@@ -38,6 +38,8 @@ const config: Config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
 
+          onUntruncatedBlogPosts: 'ignore',
+
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
