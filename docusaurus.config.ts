@@ -2,10 +2,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'UJ news',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -38,8 +37,6 @@ const config: Config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
 
-          onUntruncatedBlogPosts: 'ignore',
-
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -51,7 +48,7 @@ const config: Config = {
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,12 +61,18 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'News',
       logo: {
         alt: 'My Site Logo',
         src: 'img/UJ.svg',
       },
       items: [
+
+        {to: '/tags/noticias',  label: 'Noticias',   position: 'left'},
+        {to: '/tags/eventos',   label: 'Eventos',    position: 'left'},
+        {to: '/tags/atletica',  label: 'Atlética',   position: 'left'},
+        {to: '/tags/lembretes', label: 'Lembretes',  position: 'left'},
+
       ],
     },
     footer: {

@@ -24,7 +24,10 @@ export default function BlogPostItem({children, className}: Props): ReactNode {
   return (
     <BlogPostItemContainer className={clsx(containerClassName, className)}>
 
-      {(image != undefined) && (<div className={clsx(styles.blogCoverImage)} style={{ backgroundImage: `url(${image})` }}></div>)}
+      {(image != undefined) && (<div>
+          <div className={clsx(styles.blogCoverImage)} style={{ backgroundImage: `url(${image})` }}></div>
+          <div className={clsx(styles.blogCoverShadow)}></div>
+      </div>)}
       <BlogPostItemHeader />
 
       <BlogPostItemContent>{children}</BlogPostItemContent>

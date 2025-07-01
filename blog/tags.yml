@@ -1,6 +1,19 @@
+noticias:
+  label: Noticias
+  permalink: /noticias
+  description: Fique ligado nos aventos acontecendo dentro da faculdade!
+
 eventos:
   label: Eventos
   permalink: /eventos
-  description: Fique ligado nos aventos acontecendo dentro da faculdade!
+  description: Atente-se a eventos de seu interesse!
 
+atletica:
+  label: Atlética
+  permalink: /atletica
+  description: Noticias sobre esportes dentro da UJ!
 
+lembretes:
+  label: Lembretes
+  permalink: /lembretes
+  description: Fique ligado!

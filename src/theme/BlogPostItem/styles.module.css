@@ -3,9 +3,25 @@
     height: 450px;
     margin-bottom: calc(-20px - 3rem);
 
+    position: relative;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     border-radius: 20px 20px 0 0;
+}
+
+.blogCoverShadow {
+    position: relative;
+    height: 100px;
+    margin-bottom: -100px;
+    top: -30px;
+    width: 100%;
+
+    background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--ifm-background-color) 90%
+      var(--ifm-background-color) 100%
+    );
 }
