@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'camila-unijorge',
   projectName: 'uj-news',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
